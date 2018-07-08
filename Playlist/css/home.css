@@ -1,0 +1,172 @@
+body{
+    background-image: linear-gradient(white, gray, black);
+}
+
+
+#up{
+    width: 100%;
+    height: 10%;
+    text-align: right;
+}
+
+#center{
+    width: 100%;
+    height: 10%;
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    color: darkolivegreen;
+    font-family: myFirstFont;
+}
+
+
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/Blobtastics.ttf);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Consequences.ttf);
+}
+
+#right{
+    margin-top: 35px;
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    font-size: x-large;
+}
+
+#down{
+    width: 100%;
+    height: 80%;
+    align-content: center;
+}  
+
+table{
+    background-color: #393939;
+    font-weight: 900;
+    color: darkolivegreen;
+    font-size: x-large;
+}
+
+thead{
+    color: olivedrab;
+}
+
+.buttonS{  
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #393939;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: inhert;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px; 
+  height: 90px;
+}
+
+.buttonS span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-weight: 900;
+  color: darkolivegreen;
+}
+
+.buttonS span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonS:hover span {
+  padding-right: 25px;
+}
+
+.buttonS:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: gray;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: titleFont;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#bobo {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: darkolivegreen;
+  background-color: #393939;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-weight: 900;
+}
+
+#bobo:hover {
+    background-color: darkolivegreen;
+    color: #393939;
+
+}
+#bobo:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
